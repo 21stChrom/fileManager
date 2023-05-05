@@ -9,7 +9,7 @@ const renderFiles = () => {
     const containers = [];
       for (let i = 0; i < 30; i++) {
           const file = files[i];
-              containers.push(
+              containers.pus6h(
                     <div
                             key={i}
                                     className={`file-container hidden-${i + 1}`}
