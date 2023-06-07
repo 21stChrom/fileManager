@@ -6,7 +6,7 @@ const files = [
   // Add more files as needed...
 ];
 
-const FileManager = () => {
+const Filemanager = () => {
   const handleMouseEnter = (event) => {
     const containers = Array.from(
       document.querySelectorAll('.file-container')
@@ -70,4 +70,4 @@ const FileManager = () => {
   return <div className="file-manager">{renderFiles()}</div>;
 };
 
-export default FileManager;
+export default < Filemanager />;

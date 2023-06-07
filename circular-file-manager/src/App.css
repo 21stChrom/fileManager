@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.file-manager {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.file-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.file-container.visible {
+  opacity: 1;
+}
+
+.file-container span {
+  font-size: 12px;
+}
+
+.file-container.hidden-1 {
+  transform: translate(-50%, -250px);
+}
+
+.file-container.hidden-2 {
+  transform: translate(-86.6px, -220px);
+}
+
+/* Continue the hidden styles for the remaining file containers */
+
+.outer-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+  }
+  
